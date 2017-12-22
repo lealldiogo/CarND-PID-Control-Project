@@ -24,7 +24,7 @@ Assuming I wouldn't need to compensate for any error of the system, I knew from 
 
 With that in mind, I started to manually tune the parameters and at first I tried to see how `Kp = -0.5`, `Ki = 0` and `Kd = -0.5` would drive the car. Even though it started out ok, it started to increase the amplitude of its steering until it actually drove of the track coming back to it only to drive in the opposite direction as seen in the picture:
 
-[!first_params](first_params.png)
+![first_params](first_params.png)
 
 After that I decided to try tuning with the gains from the PID Implementation Quiz from the PID Control Lesson. By setting `Kp = -0.2`, `Ki = -0.004` and `Kd = -3.0` I was able to make the car drive itself around the track! To make the ride a little smoother, I doubled the derivative gain and ended up with `Kp = -0.2`, `Ki = -0.004` and `Kd = -6.0`.
 
